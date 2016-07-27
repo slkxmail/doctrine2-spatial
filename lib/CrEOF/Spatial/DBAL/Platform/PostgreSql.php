@@ -58,7 +58,7 @@ class PostgreSql extends AbstractPlatform
             return sprintf('%s(%s,%d)', $typeFamily, $sqlType, $fieldDeclaration['srid']);
         }
 
-        return sprintf('%s(%s)', $typeFamily, $sqlType);
+        return sprintf('%s', $typeFamily, $sqlType);
     }
 
     /**
